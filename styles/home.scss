@@ -1,0 +1,57 @@
+.wrap {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.menu,
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  height: 90px;
+}
+
+.links {
+  max-width: 340px;
+  width: 100%;
+  font-family: Dosis SemiBold;
+}
+
+strong {
+  font-family: Dosis Bold;
+}
+
+.large-title {
+  font-size: 45px;
+}
+
+.first-section {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.intro-text {
+  font-size: 28px;
+  max-width: 541px;
+  width: 100%;
+}
+
+.btn {
+  border-radius: 12px;
+  background: #525293;
+  box-shadow: 0px 10px 20px rgba(52, 53, 55, 0.4);
+  font-size: 18px;
+  color: #f0e7d7;
+  font-family: Dosis Bold;
+  padding: 12px 35px;
+  cursor: pointer;
+}
+
+.cta-holder {
+  margin-top: 50px;
+}

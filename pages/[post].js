@@ -1,13 +1,19 @@
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 import renderers from "../services/codeBlock";
+import Head from "next/head";
 
-const Post = ({ data }) => {
-  const post = JSON.parse(data);
-  const content = post.content;
+const Post = ({ markdown }) => {
+  const { content, data } = JSON.parse(markdown);
   console.log(content);
   return (
     <>
+      <Head>
+        <title>{data.title}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="Description" content={data.description}></meta>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <ReactMarkdown renderers={renderers} children={content} />
     </>
   );
@@ -24,7 +30,7 @@ export async function getServerSideProps({ params }) {
 
   return {
     props: {
-      data: JSON.stringify(data),
+      markdown: JSON.stringify(data),
     },
   };
 }
