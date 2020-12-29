@@ -65,16 +65,27 @@ export default function Home({ data }) {
           </div>
         </div>
       </section>
-      <section>
+      <section className="section-three">
         <div className="wrap">
-          <ul>
+          <p className="large-title">
+            <strong>
+              <span className="underline">The B</span>log
+            </strong>
+          </p>
+        </div>
+
+        <div className="blog">
+          <ul className="latest">
             {ListItems.map((blog, i) => (
               <li key={i}>
+                <Image src={blog.image} width={389} height={240} />
                 <Link href={`/${blog.slug}`}>
-                  <a>{blog.title}</a>
+                  <a className="post-title">{blog.title}</a>
                 </Link>
                 <p>{blog.description}</p>
-                <img src={blog.image} />
+                <Link href={`/${blog.slug}`}>
+                  <a className="reading-link">CONTINUE READING...</a>
+                </Link>
               </li>
             ))}
           </ul>
