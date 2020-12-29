@@ -14,8 +14,8 @@ export default function Home({ data }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section>
-        <div className="wrap first-section">
+      <section className="section-one">
+        <div className="wrap">
           <div className="intro-text">
             <p className="large-title">
               <strong>I’m Austine</strong> Amah,
@@ -33,6 +33,35 @@ export default function Home({ data }) {
           </div>
           <div>
             <Image src="/images/headshot.png" width={492} height={492} />
+          </div>
+        </div>
+      </section>
+      <section className="section-two">
+        <div className="wrap">
+          <div>
+            <Image
+              src="/images/ruby-intro.png"
+              width={472 / 1.5}
+              height={566 / 1.5}
+            />
+          </div>
+
+          <div className="book-text">
+            <p className="sub-title">
+              <strong>
+                Introduction To Ruby For <br /> Javascript Developers.
+              </strong>
+            </p>
+            <p>
+              Vestibulum id ligula porta felis euismod semper. Cum sociis
+              natoque penatibus et magnis dis parturient montes, nascetur
+              ridiculus mus. Cras justo odio, dapibus ac facilisis in, egestas
+              eget quam.
+            </p>
+
+            <div className="cta-holder">
+              <span className="btn">Get It For FREE</span>
+            </div>
           </div>
         </div>
       </section>

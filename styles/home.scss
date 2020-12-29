@@ -28,17 +28,44 @@ strong {
   font-size: 45px;
 }
 
-.first-section {
+.sub-title {
+  font-size: 30px;
+}
+
+.section-one > div,
+.section-two > div {
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .intro-text {
   font-size: 28px;
   max-width: 541px;
   width: 100%;
+}
+
+.book-text {
+  font-size: 20px;
+  max-width: 480px;
+  width: 100%;
+}
+
+.section-one {
+  padding-bottom: 80px;
+}
+
+.section-two {
+  background-color: #f4f4f4;
+  padding-bottom: 80px;
+  padding-top: 20px;
+}
+
+.section-two > div {
+  justify-content: space-around;
+  align-items: start;
 }
 
 .btn {
