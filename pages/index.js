@@ -2,10 +2,13 @@ import Head from "next/head";
 import matter from "gray-matter";
 import Link from "next/link";
 import Image from "next/image";
+import { useProxy } from "valtio";
+import store from "../store/index";
 
 export default function Home({ data }) {
   const RealData = data.map((blog) => matter(blog));
   const ListItems = RealData.map((listItem) => listItem.data);
+  const snapshot = useProxy(store);
 
   return (
     <>
@@ -32,7 +35,15 @@ export default function Home({ data }) {
             </div>
           </div>
           <div>
-            <Image src="/images/headshot.png" width={492} height={492} />
+            <Image
+              src={
+                snapshot.darkMode
+                  ? "/images/headshot-light.png"
+                  : "/images/headshot.png"
+              }
+              width={492}
+              height={492}
+            />
           </div>
         </div>
       </section>
