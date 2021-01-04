@@ -32,8 +32,8 @@ strong {
   font-size: 30px;
 }
 
-.section-one > div,
-.section-two > div {
+.section-one>div,
+.section-two>div {
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
@@ -63,7 +63,7 @@ strong {
   padding-top: 20px;
 }
 
-.section-two > div {
+.section-two>div {
   justify-content: space-around;
   align-items: start;
 }
@@ -77,6 +77,13 @@ strong {
   font-family: Dosis Bold;
   padding: 12px 35px;
   cursor: pointer;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    background: lighten($color: #525293, $amount: 10);
+    transform: translateY(-6px);
+
+  }
 }
 
 .cta-holder {
@@ -128,4 +135,8 @@ strong {
 .blog {
   width: 80%;
   margin: 0 auto;
+}
+
+.mobile-links {
+  display: none;
 }

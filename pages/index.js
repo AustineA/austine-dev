@@ -31,7 +31,7 @@ export default function Home({ data }) {
             </p>
 
             <div className="cta-holder">
-              <span className="btn">Subscribe</span>
+              <button className="btn">Subscribe</button>
             </div>
           </div>
           <div>
@@ -71,7 +71,7 @@ export default function Home({ data }) {
             </p>
 
             <div className="cta-holder">
-              <span className="btn">Get It For FREE</span>
+              <button className="btn">Get It For FREE</button>
             </div>
           </div>
         </div>

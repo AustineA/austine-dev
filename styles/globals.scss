@@ -1,4 +1,5 @@
 @import "./home.scss";
+@import "./mobile.scss";
 
 @font-face {
   font-family: "Dosis Light";
@@ -62,11 +63,20 @@ a {
   text-decoration: none;
 }
 
+button {
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
 
 @media (prefers-color-scheme: dark) {
+
   html,
   body {
     --primary: #f0e7d7;

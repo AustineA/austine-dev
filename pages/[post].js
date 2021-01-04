@@ -14,7 +14,9 @@ const Post = ({ markdown }) => {
         <meta name="Description" content={data.description}></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <ReactMarkdown renderers={renderers} children={content} />
+      <div className="wrap">
+        <ReactMarkdown renderers={renderers} children={content} />
+      </div>
     </>
   );
 };
