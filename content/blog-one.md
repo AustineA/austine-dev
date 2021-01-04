@@ -11,11 +11,19 @@ image: https://picsum.photos/389/240
 Step one
 
 ```js
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
-}
+const Menu = () => {
+  const menu = document.querySelector(".hamburger");
+  menu.addEventListener("click", toggle);
 
-export default MyApp;
+  var list = document.getElementById("menu");
+
+  function toggle() {
+    menu.classList.toggle("change");
+    list.classList.toggle("change");
+  }
+};
+
+export default Menu;
 ```
 
 Thats it ma
