@@ -1,5 +1,5 @@
 ---
-slug: blog-two
+slug: blog-four
 title: Authenticating Nextjs with rails cookie.
 description: Vestibulum id ligula porta felis euismod semper.
 date: 31 December 2020

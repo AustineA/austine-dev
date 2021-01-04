@@ -17,3 +17,5 @@ export default function useDarkMode() {
     withDarkMode(prefersDarkScheme);
   }, []);
 }
+
+// "[{\"date\":\"18 Nov. 20\",\"amount\":5000000,\"remaining_balance\":2000000},{\"date\":\"30 Dec. 20\",\"amount\":2000000,\"remaining_balance\":0}]"
