@@ -26,8 +26,8 @@ export default function Home({ data }) {
             <p>
               A senior software engineer, <br /> Founder at Luna Base and
               currently bootstrapping PaperCloud. <br /> <br />
-              Join my email list as I document my journey working with Next.js
-              and Ruby on Rails backend.
+              Join my email list as I document my journey exploring Web/Mobile
+              technologies, while building a SaaS business in public.
             </p>
 
             <div className="cta-holder">

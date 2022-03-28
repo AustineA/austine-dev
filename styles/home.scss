@@ -17,11 +17,13 @@
 .links {
   max-width: 340px;
   width: 100%;
-  font-family: Dosis SemiBold;
+  font-family: Dosis;
+  font-weight: 500;
 }
 
 strong {
-  font-family: Dosis Bold;
+  font-family: Dosis;
+  font-weight: 600;
 }
 
 .large-title {
@@ -74,7 +76,8 @@ strong {
   box-shadow: 0px 10px 20px rgba(52, 53, 55, 0.4);
   font-size: 18px;
   color: var(--secondary);
-  font-family: Dosis Bold;
+  font-family: Dosis;
+  font-weight: 600;
   padding: 12px 35px;
   cursor: pointer;
 }
@@ -114,13 +117,16 @@ strong {
     }
 
     a.post-title {
-      font-family: Dosis Bold;
+      font-family: Dosis;
+      font-weight: 600;
+
       font-size: 20px;
       margin-top: 15px;
     }
 
     a.reading-link {
-      font-family: Dosis Medium;
+      font-family: Dosis;
+      font-weight: 500;
     }
   }
 }
