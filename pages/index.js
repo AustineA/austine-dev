@@ -7,7 +7,11 @@ import store from "../store/index";
 
 export default function Home({ data }) {
   const RealData = data.map((blog) => matter(blog));
-  const ListItems = RealData.map((listItem) => listItem.data);
+
+  const ListItems = RealData.map((listItem) => listItem.data).sort((a, b) => {
+    return new Date(b.date) - new Date(a.date);
+  });
+
   const snapshot = useProxy(store);
 
   return (
@@ -24,10 +28,22 @@ export default function Home({ data }) {
               <strong>I’m Austine</strong> Amah,
             </p>
             <p>
-              A senior software engineer, <br /> Founder at Luna Base and
-              currently bootstrapping PaperCloud. <br /> <br />
-              Join my email list as I document my journey exploring Web/Mobile
-              technologies, while building a SaaS business in public.
+              A senior software engineer, founder at{" "}
+              <a href="https://lunabase.xyz" target="_blank" className="a-link">
+                Luna Base
+              </a>{" "}
+              and currently bootstrapping{" "}
+              <a
+                href="https://usepapercloud.com"
+                target="_blank"
+                className="a-link"
+              >
+                PaperCloud
+              </a>
+              . <br /> <br />
+              Join me as I document my journey exploring both Mobile and Web
+              technologies, and everything i've learned building a SaaS business
+              in public.
             </p>
 
             <div className="cta-holder">

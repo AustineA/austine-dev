@@ -1,0 +1,38 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .links {
+    display: none;
+  }
+  .wrap {
+    padding: 0 1.25rem;
+  }
+
+  .post {
+    padding-bottom: 3rem;
+  }
+
+  .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .section-one {
+    & > div {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .large-title {
+    font-size: 2rem;
+  }
+
+  .intro-text {
+    font-size: 1.5rem;
+  }
+
+  .latest {
+    li {
+      margin-left: 0;
+    }
+  }
+}

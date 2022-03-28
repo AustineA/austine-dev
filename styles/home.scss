@@ -1,6 +1,34 @@
+body {
+  font-size: 1.25rem;
+}
+
+.post {
+  padding-bottom: 3rem;
+
+  p {
+    font-size: 1.5rem;
+    line-height: 1.7;
+  }
+}
+code {
+  background: var(--secondary-bg);
+  padding: 2px 5px;
+  border-radius: 5px;
+  font-size: 1.25rem;
+}
+
+pre {
+  border-radius: 8px;
+}
+
 .wrap {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 75rem;
+  width: 100%;
+}
+
+.a-link {
+  text-decoration: underline;
 }
 
 .menu,
@@ -11,11 +39,11 @@
 }
 
 .menu {
-  height: 90px;
+  height: 5rem;
 }
 
 .links {
-  max-width: 340px;
+  max-width: 21.25rem;
   width: 100%;
   font-family: Dosis;
   font-weight: 500;
@@ -27,16 +55,16 @@ strong {
 }
 
 .large-title {
-  font-size: 45px;
+  font-size: 2.813rem;
 }
 
 .sub-title {
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 
 .section-one > div,
 .section-two > div {
-  margin-top: 50px;
+  margin-top: 3.125rem4;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,60 +72,61 @@ strong {
 }
 
 .intro-text {
-  font-size: 28px;
-  max-width: 541px;
+  font-size: 1.75rem;
+  max-width: 33.813rem;
   width: 100%;
+  font-weight: 300;
 }
 
 .book-text {
-  font-size: 20px;
-  max-width: 480px;
+  font-size: 1.25rem;
+  max-width: 30rem;
   width: 100%;
 }
 
 .section-one {
-  padding-bottom: 80px;
+  padding-bottom: 5rem;
 }
 
 .section-two {
   background-color: var(--secondary-bg);
-  padding-bottom: 80px;
-  padding-top: 20px;
+  padding-bottom: 5rem;
+  padding-top: 1.25rem;
 }
 
 .section-two > div {
   justify-content: space-around;
-  align-items: start;
+  // align-items: start;
 }
 
 .btn {
-  border-radius: 20px;
+  border-radius: 1.25rem;
   background: var(--bg);
-  box-shadow: 0px 10px 20px rgba(52, 53, 55, 0.4);
-  font-size: 18px;
+  box-shadow: 0 0.625rem 1.25rem rgba(52, 53, 55, 0.4);
+  font-size: 1.125rem;
   color: var(--secondary);
   font-family: Dosis;
   font-weight: 600;
-  padding: 12px 35px;
+  padding: 0.75rem 2.188rem;
   cursor: pointer;
 }
 
 .cta-holder {
-  margin-top: 50px;
+  margin-top: 3.125rem;
 }
 
 .section-three {
-  padding-bottom: 80px;
+  padding-bottom: 5rem;
 }
 
 .underline {
-  border-bottom: 8px solid var(--unlines);
-  border-radius: 4px;
+  border-bottom: 0.5rem solid var(--unlines);
+  border-radius: 0.25rem;
 }
 
 .latest {
   display: flex;
-  margin-top: 80px;
+  margin-top: 5rem;
   justify-content: start;
   padding: 0;
   flex-wrap: wrap;
@@ -107,21 +136,21 @@ strong {
     list-style: none;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-left: 30px;
-    margin-bottom: 30px;
-    max-width: 300px;
+    margin-left: 1.875rem;
+    margin-bottom: 1.875rem;
+    max-width: 18.75rem;
     width: 100%;
 
     img {
-      border-radius: 20px;
+      border-radius: 1.25rem;
     }
 
     a.post-title {
       font-family: Dosis;
       font-weight: 600;
 
-      font-size: 20px;
-      margin-top: 15px;
+      font-size: 1.25rem;
+      margin-top: 0.938rem;
     }
 
     a.reading-link {
